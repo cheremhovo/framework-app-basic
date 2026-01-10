@@ -1,0 +1,30 @@
+{
+    "name": "cheremhovo1990/framework-app-basic",
+    "description": "Framework App Basic",
+    "type": "library",
+    "scripts": {
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "export XDEBUG_MODE=debug,develop && export XDEBUG_TRIGGER=yes && php -S 0.0.0.0:8080 -t public"
+        ]
+    },
+    "require": {
+        "php": ">=8.4",
+        "cheremhovo1990/framework": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Kozhukhov Ivan",
+            "email": "cheremhovo1990@yandex.ru"
+        }
+    ],
+    "license": "MIT"
+}
